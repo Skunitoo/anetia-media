@@ -86,7 +86,7 @@ export default async function handler(req, res) {
       access: "public",
       contentType: mimeType,
       addRandomSuffix: false,
-      token: process.env.BLOB_READ_WRITE_TOKEN
+      token: process.env.ANETIA_READ_WRITE_TOKEN
     });
 
     return res.status(200).json({
